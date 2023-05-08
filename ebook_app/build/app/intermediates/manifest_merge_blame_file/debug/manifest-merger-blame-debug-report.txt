@@ -1,0 +1,111 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ebook_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\hongl\Desktop\ebook_app\android\app\src\main\AndroidManifest.xml:3:5-66
+14-->C:\Users\hongl\Desktop\ebook_app\android\app\src\main\AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.exoplayer:exoplayer-core:2.17.0] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\cb070aa8ca3e58b91c7d3f9173b5f308\jetified-exoplayer-core-2.17.0\AndroidManifest.xml:24:5-79
+15-->[com.google.android.exoplayer:exoplayer-core:2.17.0] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\cb070aa8ca3e58b91c7d3f9173b5f308\jetified-exoplayer-core-2.17.0\AndroidManifest.xml:24:22-76
+16
+17    <application
+18        android:name="android.app.Application"
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.7.0] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\b9a960218f5163997c0fdfa3d3078c0e\core-1.7.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+22        android:label="ebook_app"
+23        android:usesCleartextTraffic="true" >
+24        <activity
+25            android:name="com.example.ebook_app.MainActivity"
+26            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+27            android:exported="true"
+28            android:hardwareAccelerated="true"
+29            android:launchMode="singleTop"
+30            android:theme="@style/LaunchTheme"
+31            android:windowSoftInputMode="adjustResize" >
+32
+33            <!--
+34                 Specifies an Android theme to apply to this Activity as soon as
+35                 the Android process has started. This theme is visible to the user
+36                 while the Flutter UI initializes. After that, this theme continues
+37                 to determine the Window background behind the Flutter UI.
+38            -->
+39            <meta-data
+40                android:name="io.flutter.embedding.android.NormalTheme"
+41                android:resource="@style/NormalTheme" />
+42
+43            <intent-filter>
+44                <action android:name="android.intent.action.MAIN" />
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+47            </intent-filter>
+48        </activity>
+49        <!--
+50             Don't delete the meta-data below.
+51             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+52        -->
+53        <meta-data
+54            android:name="flutterEmbedding"
+55            android:value="2" />
+56
+57        <provider
+57-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+58            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+58-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+59            android:authorities="com.example.ebook_app.flutter.image_provider"
+59-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+60            android:exported="false"
+60-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+61            android:grantUriPermissions="true" >
+61-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+62            <meta-data
+62-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+63                android:name="android.support.FILE_PROVIDER_PATHS"
+63-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+64                android:resource="@xml/flutter_image_picker_file_paths" />
+64-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+65        </provider>
+66        <provider
+66-->[:share] C:\Users\hongl\Desktop\ebook_app\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+67            android:name="io.flutter.plugins.share.ShareFileProvider"
+67-->[:share] C:\Users\hongl\Desktop\ebook_app\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-70
+68            android:authorities="com.example.ebook_app.flutter.share_provider"
+68-->[:share] C:\Users\hongl\Desktop\ebook_app\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+69            android:exported="false"
+69-->[:share] C:\Users\hongl\Desktop\ebook_app\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+70            android:grantUriPermissions="true" >
+70-->[:share] C:\Users\hongl\Desktop\ebook_app\build\share\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+71            <meta-data
+71-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+72                android:name="android.support.FILE_PROVIDER_PATHS"
+72-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+73                android:resource="@xml/flutter_share_file_paths" />
+73-->[:image_picker_android] C:\Users\hongl\Desktop\ebook_app\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+74        </provider>
+75
+76        <uses-library
+76-->[androidx.window:window:1.0.0-beta04] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+77            android:name="androidx.window.extensions"
+77-->[androidx.window:window:1.0.0-beta04] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+78            android:required="false" />
+78-->[androidx.window:window:1.0.0-beta04] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+79        <uses-library
+79-->[androidx.window:window:1.0.0-beta04] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+80            android:name="androidx.window.sidecar"
+80-->[androidx.window:window:1.0.0-beta04] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+81            android:required="false" />
+81-->[androidx.window:window:1.0.0-beta04] C:\Users\hongl\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+82    </application>
+83
+84</manifest>
